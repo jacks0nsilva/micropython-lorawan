@@ -4,8 +4,6 @@ O exemplo de comunicação LORA se encontram [no seguinte arquivo código microp
 
 Detalhes sobre o hardware do periférico podem ser encontrados no seguinte [link](../../../hardware/peripherals_hw/README.md).
 
-<img src="./mpu-test-setup.png">
-
 Figura 16: Setup de teste da placa periférica do LoRA.
 
 ## Código fonte
