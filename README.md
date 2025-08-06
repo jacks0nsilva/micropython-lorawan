@@ -1,11 +1,18 @@
-## Periférico comunicação radio de longa distância LoRA (SPI)
+## BitDogLab - Atividade prática com LoRa
 
-O exemplo de comunicação LORA se encontram [no seguinte arquivo código micropython CLIENTE](./16_radio_lora/lora-client.py) e [arquivo código micropython SERVIDOR](./16_radio_lora/lora-server.py), lembrando-se que é necessário antes ter realizado o carregamento do firmware com todas as bibliotecas necessárias mencionadas no guia deste [link](../README.md).
+Os códigos e materiais aqui apresentados foram utilizados na atividade prática com LoRa na BitDogLab, no programa de residência EmbarcaTech.
 
-Detalhes sobre o hardware do periférico podem ser encontrados no seguinte [link](../../../hardware/peripherals_hw/README.md).
+## Requisitos para executar o código
 
-Figura 16: Setup de teste da placa periférica do LoRA.
+- Thonny IDE
+- Firmware com bibliotecas necessárias carregadas na placa (BitDogLab_W.uf2)
+- Placa BitDogLab
+- Periférico LoRA RFM95W
 
-## Código fonte
+`lora-client.py` - Código para o cliente LoRa
 
-O código fonte do exemplo de comunicação LoRA pode ser encontrado no seguinte [repositório](https://github.com/jrfo-hwit/hlab/tree/main/firmware/micropython/examples)
+`lora-server.py` - Código para o servidor LoRa
+
+`ulora.py` - Biblioteca LoRa para MicroPython
+
+`BitDogLab_W.uf2` - Firmware com bibliotecas necessárias para a placa BitDogLab
