@@ -27,6 +27,7 @@ x=0
 
 botao_a = Pin(5, Pin.IN, Pin.PULL_UP)
 botao_b = Pin(6,Pin.IN,Pin.PULL_UP)
+joystick_button = Pin(22, Pin.IN, Pin.PULL_UP)
 
 led_teste.off()
 def msg(text=''):
@@ -41,7 +42,7 @@ while True:
     
     if botao_a.value() == 0:
         
-        oled.text(f"CMD enviado : 3", 0, 50, 1)
+        oled.text(f"CMD enviado : 1", 0, 50, 1)
         oled.show()
         msg('1')
 
@@ -49,4 +50,10 @@ while True:
         
         oled.text(f"CMD enviado : 4", 0, 50, 1)
         oled.show()
-        msg('2')
+        msg('4')
+
+    if joystick_button.value() == 0:
+
+        oled.text(f"CMD enviado: 3", 0, 50, 1)
+        oled.show()
+        msg('3')
